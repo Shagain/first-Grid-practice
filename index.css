@@ -1,0 +1,90 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+
+.main-container{
+  width: 100vw;
+  height: 100vh;
+  color: white;
+  display: grid;
+  grid-gap: 5px;
+
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+  grid-template-areas: 
+  "Global Global Global"
+  "navBar navBar navBar"
+  "Banner Banner offer1"
+  "Banner Banner offer2"
+  "menu Product Product"
+  "recent Product Product"
+  "Tags Product Product"
+  "footer footer footer";
+  padding: 10px;
+}
+
+.main-container > div{
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+
+.item1 {
+  grid-area: Global;
+  background-color: blue;
+}
+
+.item2 {
+  grid-area: navBar;
+  background-color: rgb(210, 39, 20);
+
+}
+
+.item3 {
+  grid-area: Banner;
+  background-color: #bf5252;
+  background: linear-gradient(90deg, rgba(191, 82, 82, 1) 26%, rgba(189, 74, 183, 1) 50%, rgba(61, 61, 179, 1) 100%);
+}
+
+.item4 {
+  grid-area: offer1;
+  background-color: rgb(216, 80, 80);
+}
+
+
+.item5 {
+  grid-area: offer2;
+  background-color: rgb(146, 34, 146);
+}
+
+.item6 {
+  grid-area: menu;
+  background-color: rgb(85, 202, 225);
+}
+
+.item7 {
+  grid-area: recent;
+  background-color: blue;
+}
+
+.item8 {
+  grid-area: Tags;
+  background-color: rgb(239, 139, 7);
+}
+
+.item9 {
+  grid-area: Product;
+  background-color: #fc3232;
+  background: radial-gradient(circle, rgba(252, 50, 50, 1) 0%, rgba(242, 70, 70, 1) 26%, rgba(252, 219, 50, 1) 81%);;
+}
+
+.item10 {
+  grid-area: footer;
+  background-color: rgb(16, 16, 15);
+}
+
+
